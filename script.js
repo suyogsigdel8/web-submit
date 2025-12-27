@@ -4,7 +4,7 @@ document.body.style.padding = '0';
 document.body.style.height = '100vh';
 
 
-const main = document.querySelector('.main');
+const main = document.querySelector('.main');//container
 
 // Make the main container take the full viewport and act as a grid container
 main.style.height = '100vh';
