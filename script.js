@@ -55,30 +55,30 @@ bottomright_div.style.justifyContent = "center";
 bottomright_div.style.alignItems = "center";
 
 
-topleft_div.style.backgroundColor = 'white';
-topright_div.style.backgroundColor = 'white';
-bottomleft_div.style.backgroundColor = 'white';
-bottomright_div.style.backgroundColor = 'white';
+topleft_div.style.backgroundColor = 'black';
+topright_div.style.backgroundColor = 'black';
+bottomleft_div.style.backgroundColor = 'black';
+bottomright_div.style.backgroundColor = 'black';
 
 
 let topleft_text = document.createElement("p");
-topleft_text.textContent = "BLUE";
-topleft_text.style.color = "white";
+topleft_text.textContent = "blue";
+topleft_text.style.color = "black";
 topleft_text.style.textAlign = "center";
 
 let topright_text = document.createElement("p");
-topright_text.textContent = "RED";
-topright_text.style.color = "white";
+topright_text.textContent = "red";
+topright_text.style.color = "black";
 topright_text.style.textAlign = "center";
 
 let bottomleft_text = document.createElement("p");
-bottomleft_text.textContent = "PURPLE";
-bottomleft_text.style.color = "white";
+bottomleft_text.textContent = "purple";
+bottomleft_text.style.color = "black";
 bottomleft_text.style.textAlign = "center";
 
 let bottomright_text = document.createElement("p");
-bottomright_text.textContent = "ORANGE";
-bottomright_text.style.color = "white";
+bottomright_text.textContent = "white";
+bottomright_text.style.color = "black";
 bottomright_text.style.textAlign = "center";
 
 
@@ -89,7 +89,7 @@ topleft_div.addEventListener("mouseenter", function() {
 });
 
 topleft_div.addEventListener("mouseleave", function() {
-    topleft_div.style.backgroundColor = "white";
+    topleft_div.style.backgroundColor = "black";
     if (topleft_text.parentNode) {
         topleft_div.removeChild(topleft_text);
     }
@@ -102,7 +102,7 @@ topright_div.addEventListener("mouseenter", function() {
 });
 
 topright_div.addEventListener("mouseleave", function() {
-    topright_div.style.backgroundColor = "white";
+    topright_div.style.backgroundColor = "black";
     if (topright_text.parentNode) {
         topright_div.removeChild(topright_text); 
     }
@@ -114,7 +114,7 @@ bottomleft_div.addEventListener("mouseenter", function() {
 });
 
 bottomleft_div.addEventListener("mouseleave", function() {
-    bottomleft_div.style.backgroundColor = "white";
+    bottomleft_div.style.backgroundColor = "black";
     if (bottomleft_text.parentNode) {
         bottomleft_div.removeChild(bottomleft_text); 
     }
@@ -122,12 +122,12 @@ bottomleft_div.addEventListener("mouseleave", function() {
 
 
 bottomright_div.addEventListener("mouseenter", function() {
-    bottomright_div.style.backgroundColor = "orange";
+    bottomright_div.style.backgroundColor = "white";
     bottomright_div.appendChild(bottomright_text);    
 });
 
 bottomright_div.addEventListener("mouseleave", function() {
-    bottomright_div.style.backgroundColor = "white";
+    bottomright_div.style.backgroundColor = "black";
     if (bottomright_text.parentNode) {
         bottomright_text.removeChild(bottomright_text); 
     }
