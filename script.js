@@ -4,33 +4,33 @@ document.body.style.padding = '0';
 document.body.style.height = '100vh';
 
 
-const main = document.querySelector('.main');
+const container = document.querySelector('.container');
 
 
-main.style.height = '100vh';
-main.style.margin = '0';
-main.style.padding = '0';
-main.style.display = 'grid';
-main.style.gridTemplateColumns = '1fr 1fr';  
-main.style.gridTemplateRows = '1fr 1fr';     
-main.style.boxSizing = 'border-box';
+container.style.height = '100vh';
+container.style.margin = '0';
+container.style.padding = '0';
+container.style.display = 'grid';
+container.style.gridTemplateColumns = '1fr 1fr';  
+container.style.gridTemplateRows = '1fr 1fr';     
+container.style.boxSizing = 'border-box';
 
 
 let topleft_div=document.createElement("div")
 topleft_div.className="topleft"
-document.querySelector(".main").appendChild(topleft_div)
+document.querySelector(".container").appendChild(topleft_div)
 
 let bottomleft_div=document.createElement("div")
 bottomleft_div.className="bottomleft"
-document.querySelector(".main").appendChild(bottomleft_div)
+document.querySelector(".container").appendChild(bottomleft_div)
 
 let topright_div=document.createElement("div")
 topright_div.className="topright"
-document.querySelector(".main").appendChild(topright_div)
+document.querySelector(".container").appendChild(topright_div)
 
 let bottomright_div=document.createElement("div")
 bottomright_div.className="bottomright"
-document.querySelector(".main").appendChild(bottomright_div)
+document.querySelector(".container").appendChild(bottomright_div)
 
 
 topleft_div.style.gridArea='1/1/2/2'
