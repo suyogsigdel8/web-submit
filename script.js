@@ -4,7 +4,7 @@ document.body.style.padding = '0';
 document.body.style.height = '100vh';
 
 
-const main = document.querySelector('.container');
+const container = document.querySelector('.container');
 
 
 container.style.height = '100vh';
@@ -13,24 +13,24 @@ container.style.padding = '0';
 container.style.display = 'grid';
 container.style.gridTemplateColumns = '1fr 1fr';  
 container.style.gridTemplateRows = '1fr 1fr';     
-conatianer.style.boxSizing = 'border-box';
+container.style.boxSizing = 'border-box';
 
 
 let topleft_div=document.createElement("div")
 topleft_div.className="topleft"
-document.querySelector(".main").appendChild(topleft_div)
+document.querySelector(".container").appendChild(topleft_div)
 
 let bottomleft_div=document.createElement("div")
 bottomleft_div.className="bottomleft"
-document.querySelector(".main").appendChild(bottomleft_div)
+document.querySelector(".container").appendChild(bottomleft_div)
 
 let topright_div=document.createElement("div")
 topright_div.className="topright"
-document.querySelector(".main").appendChild(topright_div)
+document.querySelector(".container").appendChild(topright_div)
 
 let bottomright_div=document.createElement("div")
 bottomright_div.className="bottomright"
-document.querySelector(".main").appendChild(bottomright_div)
+document.querySelector(".container").appendChild(bottomright_div)
 
 
 topleft_div.style.gridArea='1/1/2/2'
